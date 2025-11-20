@@ -1,7 +1,7 @@
 console.log("Project Begonnen")
 
 var character = document.querySelector("#character");
-var block = document.querySelector("block");
+var block = document.querySelector("#block");
 
 function jump(){
     if (character.classList.contains("animate")){return}
