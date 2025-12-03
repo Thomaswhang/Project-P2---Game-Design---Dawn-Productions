@@ -1,51 +1,49 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #4a3f3f;
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    gap: 40px;
+    padding: 30px;
+}
+
+#ui {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#ui button {
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
 #game {
-    width: 500px;
-    height: 200px;
-    border: 1px solid black;
-}
-
-#character {
-    width: 20px;
-    height: 50px;
-    background-color: violet;
-    position: relative; /*Zodat ik het kan bewegen*/
-    top: 150px; /*game height - character height*/
-}
-
-#block {
-    width: 20px;
-    height: 20px;
-    background-color: blue;
+    width: 900px;
+    height: 300px;
     position: relative;
-    top: 130px;
-    left: 480px;
-    animation: block 1s infinite linear; /*Pakt Keyframes (naam), duratie, hoe vaak, en dan de animatie*/
-}
-/*----------*/
-/*Animaties*/
-/*----------*/
-
-.animate{
-    animation: jump 700ms;
+    overflow: hidden;
+    background: #333;
+    border: 3px solid #111;
 }
 
-/*----------*/
-/*Key Frames*/
-/*----------*/
-
-@keyframes block{ /*keyframe maakt een animatie*/
-    0%{left:480px;} /*Plek 1 en dan plek 2*/
-    100%{left:-40px;}
+.lane {
+    height: 100px;
+    border-bottom: 1px solid #222;
 }
 
-@keyframes jump{
-    0%{top:150px;}
-    30%{top:100px;}
-    70%{top:100px;}
-    100%{top:150px}
+#player {
+    position: absolute;
+    left: 50px;
+    width: 80px;
+    top: 100px; 
 }
