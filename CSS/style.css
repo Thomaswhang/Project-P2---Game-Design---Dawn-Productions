@@ -3,3 +3,97 @@
     padding: 0;
     box-sizing: border-box;
 }
+.grid-container {
+    height: 100vh;
+    width: 100%;
+    background: black;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-box {
+    width: 80%;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    top: 17%;
+    left: 10%;
+    padding: 50px 100px;
+    transition: top 1s;
+     text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px rgb(255, 255, 255),
+      0 0 82px rgb(255, 255, 255),
+      0 0 92px rgb(255, 255, 255),
+      0 0 102px rgb(255, 255, 255),
+      0 0 151px rgb(255, 255, 255);
+
+}
+
+.menu-links a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: block;
+    width: fit-content;
+    margin: 30px 0;
+    font-size: 36px
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu-links a::after {
+    content: '';
+    width: 40px;
+    height: 5px;
+    background: rgb(255, 255, 255);
+    display: none;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.menu-links a:hover::after {
+    display: inline-block;
+}
+
+/*Login*/
+
+body {
+    background-color: black;
+}
+
+.heading{
+    text-align: center;
+}
+
+.nav{
+    color: gold;
+}
+
+.form{
+    color: gold;
+    font-size: 50px;
+    text-align: center;
+}
+
+input[type=submit] {
+  width: 10%;
+  background-color: gold;
+  color: white;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=text], select {
+  width: 30%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
