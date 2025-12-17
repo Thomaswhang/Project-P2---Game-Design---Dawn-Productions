@@ -3,41 +3,56 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-image: url("/img/background.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
 .grid-container {
     height: 100vh;
     width: 100%;
-    background: black;
     position: relative;
     overflow: hidden;
+    background-image: url("/img/background.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .menu-box {
     width: 80%;
-    background: rgb(0, 0, 0);
     position: absolute;
     top: 17%;
     left: 10%;
     padding: 50px 100px;
     transition: top 1s;
-     text-shadow:
-      0 0 7px #fff,
-      0 0 10px #fff,
-      0 0 21px #fff,
-      0 0 42px rgb(255, 255, 255),
-      0 0 82px rgb(255, 255, 255),
-      0 0 92px rgb(255, 255, 255),
-      0 0 102px rgb(255, 255, 255),
-      0 0 151px rgb(255, 255, 255);
+    text-shadow:
+        0 0 7px #7c801f,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px rgb(255, 255, 255),
+        0 0 82px rgb(255, 255, 255),
+        0 0 92px rgb(255, 255, 255),
+        0 0 102px rgb(255, 255, 255),
+        0 0 151px rgb(255, 255, 255);
 
 }
 
 .menu-links a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: gold;
     display: block;
     width: fit-content;
     margin: 30px 0;
-    font-size: 36px
+    font-size: 36px;
+    border: 1px solid gold;
+    padding: 20px;
+    width: 250px;
+    height: 100px;
 }
 
 a {
@@ -60,40 +75,39 @@ a {
 
 /*Login*/
 
-body {
-    background-color: black;
-}
 
-.heading{
+.heading {
     text-align: center;
 }
 
-.nav{
+.nav {
     color: gold;
 }
 
-.form{
+.form {
     color: gold;
     font-size: 50px;
     text-align: center;
 }
 
 input[type=submit] {
-  width: 10%;
-  background-color: gold;
-  color: white;
-  padding: 14px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+    width: 10%;
+    background-color: gold;
+    color: white;
+    padding: 14px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
-input[type=text], select {
-  width: 30%;
-  padding: 12px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+
+input[type=text],
+select {
+    width: 30%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
