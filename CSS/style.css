@@ -63,7 +63,7 @@ a {
     content: '';
     width: 40px;
     height: 5px;
-    background: rgb(255, 255, 255);
+    background: gold;
     display: none;
     margin-left: 10px;
     margin-bottom: 5px;
@@ -110,4 +110,90 @@ select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+}
+
+/*Cards*/
+
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+    padding-top: 50px;
+    margin-right: 9%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+.flip-card {
+    
+    float: right;
+    width: 25%;
+    padding: 0 10px;
+    padding: 16px;
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    
+}
+
+.flip-card-inner {
+    border: 1px solid gold;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+
+
+
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+        box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #aab83f,
+        0 0 0.8rem #aab83f,
+        0 0 2.8rem #aab83f,
+        inset 0 0 1.3rem #aab83f;
+        animation: pulsate 1.5s infinite alternate;
+}
+
+.flip-card-back {
+    background-color: #000000;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.image{
+    width: 100%;
+    height: 100%;
 }
