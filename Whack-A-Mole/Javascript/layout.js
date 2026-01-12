@@ -71,15 +71,15 @@ function setAuditor() {
     if (auditorTile) {
         auditorTile.innerHTML = "";
     }
-    let plant = document.createElement("img");
-    plant.src = "/Whack-A-Mole/img/TRANS_AUD12.webp";
+    let auditor = document.createElement("img");
+    auditor.src = "/Whack-A-Mole/img/TRANS_AUD12.webp";
 
     let num = getRandomTile();
     if (gruntTile && gruntTile.id == num) {
         return;
     }
     auditorTile = document.getElementById(num);
-    auditorTile.appendChild(plant);
+    auditorTile.appendChild(auditor);
 }
 
 function selectTile() {

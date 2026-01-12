@@ -29,7 +29,7 @@ h1,h2{
     height: 100px;
     background-image: url("/Whack-A-Mole/img/Truck_001A.webp");
     background-size: cover;
-    background-repeat: no-repeat;
+
 }
 
 #board div img {
