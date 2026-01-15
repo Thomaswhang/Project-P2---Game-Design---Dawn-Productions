@@ -17,7 +17,7 @@ function setGame() {
         tile.addEventListener("click", selectTile);
         document.getElementById("board").appendChild(tile);
     }
-    setInterval(setGrunt, 1000); 
+    setInterval(setGrunt, 800); 
     setInterval(setAuditor, 2000); 
     setInterval(setEngineer, 850);
 }
@@ -46,7 +46,7 @@ function setGrunt() {
     gruntTile.appendChild(mole);
 }
 
-function setEngineer() {
+/*function setEngineer() {
     if (gameOver) {
         return;
     }
@@ -62,9 +62,9 @@ function setEngineer() {
     }
     engineerTile = document.getElementById(num);
     engineerTile.appendChild(mole);
-}
+}*/
 
-function setAuditor() {
+/*function setAuditor() {
     if (gameOver) {
         return;
     }
@@ -80,7 +80,7 @@ function setAuditor() {
     }
     auditorTile = document.getElementById(num);
     auditorTile.appendChild(auditor);
-}
+}*/
 
 function selectTile() {
     if (gameOver) {
@@ -90,12 +90,12 @@ function selectTile() {
         score += 10;
         document.getElementById("score").innerText = score.toString(); //update score html
     }
-    if (this == engineerTile){
+   /* if (this == engineerTile){
         score += 20;
         document.getElementById("score").innerText = score.toString(); //update score html
-    }
-    else if (this == auditorTile) {
+    }*/
+    /*else if (this == auditorTile) {
         document.getElementById("score").innerText = "GAME OVER: " + score.toString(); //update score html
         gameOver = true;
-    }
+    }*/
 }
