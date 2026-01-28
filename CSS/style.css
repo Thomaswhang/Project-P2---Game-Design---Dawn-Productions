@@ -11,6 +11,12 @@ body {
     background-repeat: no-repeat;
 }
 
+.h1, .title2{
+    color: white;
+    text-align: center;
+}
+
+
 
 .grid-container {
     height: 100vh;
